@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // hollow space //
+      var num=10;
+         for(i=1;i<=num;i++){
+            for(j=1;j<=num;j++){
+              if(i==1 || i==num || j==1 || j==num){
+                document.write("*");
+              }
+              else{
+                  document.write("&nbsp ");
+                }
+            }
+            document.write("<br>");
+         }
+
+
+         // two string more vowels//    
+            
+            function sum(a,b){
+                count=0;
+                for(i=0;i<a.length;i++){
+                    if(a[i]=="a" || a[i]=="e" || a[i]=="i" || a[i]=="o" || a[i]=="u"){
+                    count++;
+                }
+                }
+                console.log("first",count)
+                return count;
+            }
+
+            function second(){
+                var a=sum("i am a developer")
+                var b=sum("i am a tamilnadu police")
+                
+                if(a>b){
+                    document.write("first name is a more vowels")
+                }
+                else{
+                    document.write("second name is a more vowels")
+                }
+            }
+        second();
+    </script>
+</body>
+</html>
